@@ -1,0 +1,116 @@
+/*  Style  */
+
+.margin_top{
+    @apply md:mt-[6.25rem] mt-[0];
+}
+/* Slick Slider */
+.slick-slide, .portfolio_slide{
+    @apply focus-visible:!outline-0;
+}
+.slick-dots li.slick-active button:before{
+    @apply !opacity-100 !text-primary !w-4 !h-4;
+}
+.slick-dots li button:before{
+    @apply !text-base !text-[#BBC8D5] !opacity-100;
+}
+
+
+/*  */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;     
+}
+
+/*  */
+
+.swiper-buttons {
+  top: -85px;
+  z-index: 10; 
+  position: relative;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, -50px) !important;
+    left: auto !important;
+}
+.swiper-buttons .left-btn {
+  left: -100px !important;   
+  top: -40px; 
+}
+
+.swiper-buttons .right-btn {
+  right: -100px !important; 
+  top: -40px;  
+}
+
+
+.brd {
+  border: 1px solid red;
+}
+
+/* .swiper-pagination-clickable,
+.swiper-pagination-bullets,
+.swiper-pagination-horizontal,
+.swiper-pagination {
+  position: static !important;
+  bottom: -30px !important;
+}
+
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -30px !important;
+    top: 0 !important;
+} */
+
+
+/* .swiper-pagination {
+  position: relative !important;
+  margin-top: 20px !important;  
+  text-align: center;        
+}
+
+.swiper-pagination-bullets {
+  display: inline-block;
+} */
+
+.swiper-pagination {
+  position: relative !important;
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0px !important;
+    left: 0;
+    width: 100%;
+    top: 5px !important;
+    z-index: 100;
+}
+
+
+.swiper-button-prev, .swiper-button-next {
+
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  display: none;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  display: none;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  width: 45px !important;
+  height: 45px !important;
+}
+
+
+/*  */
+
+
+/* hide default pagination completely */
+
